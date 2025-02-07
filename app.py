@@ -32,13 +32,9 @@ for point in data:
 
 st.subheader("Sounding Balloon Map")
 
-# Render the map
-st.components.v1.html(world_map._repr_html_(), height=600)
-
-# Add spacing before the note
-st.write("")
-
-# Ensure the note is rendered properly
 st.markdown(
     "**Note:** The position is derived from the latitude and longitude coordinates, and the radius represents the altitude of the balloon. Zoom in to see it clearly."
 )
+st.components.v1.html(world_map._repr_html_(), height=600)
+st.write("")
+
